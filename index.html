@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kibucnik - Kursy języka hebrajskiego</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+            max-width: 100px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px;
+            border: none;
+            background-color: #2e8b57;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-form button:hover {
+            background-color: #276c46;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kibucnik</h1>
+        <p>Kursy języka hebrajskiego</p>
+    </header>
+
+    <div class="container">
+        <section id="o-mnie">
+            <h2>O mnie</h2>
+            <p>Nazywam się [Twoje Imię] i jestem doświadczonym nauczycielem języka hebrajskiego. Mam [X] lat doświadczenia w nauczaniu na różnych poziomach zaawansowania. Moim celem jest pomoc uczniom w efektywnej nauce języka hebrajskiego poprzez dostosowane do ich potrzeb kursy.</p>
+        </section>
+
+        <section id="uslugi">
+            <h2>Usługi</h2>
+            <h3>Poziomy kursów:</h3>
+            <ul>
+                <li>Początkujący</li>
+                <li>Średniozaawansowany</li>
+                <li>Zaawansowany</li>
+            </ul>
+            <h3>Grupy:</h3>
+            <ul>
+                <li>Indywidualne</li>
+                <li>Małe grupy (2-5 osób)</li>
+                <li>Duże grupy (6-10 osób)</li>
+            </ul>
+        </section>
+
+        <section id="cennik">
+            <h2>Cennik usług</h2>
+            <table>
+                <tr>
+                    <th>Poziom</th>
+                    <th>Indywidualne</th>
+                    <th>Małe grupy</th>
+                    <th>Duże grupy</th>
+                </tr>
+                <tr>
+                    <td>Początkujący</td>
+                    <td>[Cena za lekcję indywidualną]</td>
+                    <td>[Cena za małą grupę]</td>
+                    <td>[Cena za dużą grupę]</td>
+                </tr>
+                <tr>
+                    <td>Średniozaawansowany</td>
+                    <td>[Cena za lekcję indywidualną]</td>
+                    <td>[Cena za małą grupę]</td>
+                    <td>[Cena za dużą grupę]</td>
+                </tr>
+                <tr>
+                    <td>Zaawansowany</td>
+                    <td>[Cena za lekcję indywidualną]</td>
+                    <td>[Cena za małą grupę]</td>
+                    <td>[Cena za dużą grupę]</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Możesz się ze mną skontaktować poprzez e-mail: <a href="mailto:twojemail@example.com">twojemail@example.com</a> lub telefonicznie: <a href="tel:+48123456789">+48 123 456 789</a></p>
+            <h3>Formularz kontaktowy</h3>
+            <form class="contact-form" action="mailto:twojemail@example.com" method="post" enctype="text/plain">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Kibucnik. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
